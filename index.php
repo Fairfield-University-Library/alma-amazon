@@ -39,9 +39,9 @@
     <?php
       //Add your Alma Api Key here
       $key = '';
-      $code1 = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/code-tables/HFundsTransactionItem.reportingCode?apikey' . $key . ' &format=json'));
-      $code2 = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/code-tables/SecondReportingCode?apikey' . $key . ' &format=json'));
-      $code3 = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/code-tables/ThirdReportingCode?apikey' . $key . ' &format=json'));
+      $code1 = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/code-tables/HFundsTransactionItem.reportingCode?apikey=' . $key . ' &format=json'));
+      $code2 = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/code-tables/SecondReportingCode?apikey=' . $key . ' &format=json'));
+      $code3 = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/code-tables/ThirdReportingCode?apikey=' . $key . ' &format=json'));
       $locations = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/libraries/MAIN/locations?apikey' . $key . ' &format=json'));
       $funds = addslashes(file_get_contents('https://api-na.hosted.exlibrisgroup.com/almaws/v1/acq/funds?apikey' . $key . ' &format=json&limit=100'));
     ?>
